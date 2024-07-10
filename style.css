@@ -1,15 +1,26 @@
 body {
-  background-image: url(les.jpg);
+  background-image: url(les.png);
   background-size: 500px;
   background-repeat: no-repeat;
   
 }
 
-h1 {
-  color: beige;
-  font-size: 40px;
-  text-align: center;
+@font-face {
+  font-family: 'Sangha'; /* Название вашего шрифта */
+  src: url('fonts/sangha.ttf') format('truetype'); /* Путь к вашему файлу шрифта и его формат */
 }
+
+#balance_display {
+  color: rgb(0, 0, 0);
+  font-size: 37px;
+  text-align: center;
+  margin-left: 200px;
+  position: relative;
+  top: -750px;
+  font-family: 'Sangha', sans-serif; /* Используем ваш шрифт */
+}
+
+
 button {
   color: black;
   font-size: 40px;
@@ -25,10 +36,20 @@ button {
 }
 
 #dumplings_click_main {
-  background-color: transparent; /* Делаем фон прозрачным */
-  border: none; /* Убираем границы кнопки */
-  padding: 0; /* Убираем отступы внутри кнопки */
-  cursor: pointer; /* Делаем курсор указателем при наведении на кнопку */
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
   transform: scale(0.2);
-  margin-left: 40%;
+  margin-left: -30%;
+  margin-top: -22%; /* Изменили значение отступа вверх на 20% */
 }
+
+#capybara_main {
+  width: 50%; /* Пример использования процентов */
+  height: auto;
+}
+
+
+
+
